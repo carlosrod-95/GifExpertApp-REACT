@@ -1,0 +1,25 @@
+<template>
+    <section>
+        <div>
+            <p>This is a text</p>
+        </div>
+    </section>
+    <section>
+        <header>
+            <h1>This is a header</h1>
+            <p>This is a subtext</p>
+        </header>
+        <article>
+            <p>This a text</p>
+            <p id="element">This is another text</p>
+        </article>
+    </section>
+</template>
+<style>
+    :root {
+        --color-fabada: #fabada;
+    }
+    section article p:nth-child(odd) { color: #000; }
+    section p { color: var(--color-fabes, #123123); }
+    p { color: red; }
+</style>  
